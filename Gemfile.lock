@@ -45,6 +45,10 @@ GEM
     byebug (9.1.0)
     concurrent-ruby (1.0.5)
     crass (1.0.4)
+    dotenv (2.4.0)
+    dotenv-rails (2.4.0)
+      dotenv (= 2.4.0)
+      railties (>= 3.2, < 6.0)
     erubi (1.7.0)
     ffi (1.9.18)
     globalid (0.4.1)
@@ -127,6 +131,7 @@ PLATFORMS
 DEPENDENCIES
   active_hash
   byebug
+  dotenv-rails
   listen (>= 3.0.5, < 3.2)
   pg
   puma (~> 3.7)
@@ -137,4 +142,4 @@ DEPENDENCIES
   tzinfo-data
 
 BUNDLED WITH
-   1.16.0
+   1.16.1
