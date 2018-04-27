@@ -1,4 +1,4 @@
-class AccountsController < ApplicationController
+class AccountsController < ::Api::ApplicationController
   before_action :set_user, only: [:index]
   before_action :set_account, only: [:show]
 
