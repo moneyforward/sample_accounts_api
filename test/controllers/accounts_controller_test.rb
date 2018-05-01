@@ -35,6 +35,14 @@ class AccountsControllerTest < ActionDispatch::IntegrationTest
     assert_equal(expected, resp)
   end
 
+  test "cors /users/1/accounts" do
+    get '/users/1/accounts', headers: { Origin: "foo.example.com" }
+
+    assert_response :success
+
+    assert_equal "*", response.headers["Access-Control-Allow-Origin"]
+  end
+
   test "should show an account" do
     get "/accounts/2"
     assert_response :success
