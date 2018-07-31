@@ -1,19 +1,30 @@
 <div>
   <div class="content">
-    <h1>お題</h1>
+    <h1>お題 / Coding Challenge</h1>
+    <p>English follows Japanese</p>
     <p>
       以下の3つのWeb APIがあります(実際にアクセスできます)。<br />
       これらを利用して、あるユーザーIDをあたえたときのユーザー名および登録金融機関一覧と、登録金融機関の残高(balance)を出力するプログラムを作成してください。
     </p>
     <p>
       なお、プログラムはオブジェクト指向プログラミングに基づく設計・実装をしてください。<br />
-      また、解答の公開は避けてください。secret gist あるいはあるいはメールでの提出をお願いします。
+      また、解答の公開は避けてください。secret gist あるいはメールでの提出をお願いします。
+    </p>
+    <hr />
+    <p>
+      Please create a program that takes as input a user ID and outputs the name, account list and balances of that
+      user.<br />
+      You may use APIs below. (All the APIs are accessible.)
+    </p>
+    <p>
+      Please note that it is required to use object oriented programming.<br />
+      Please send your result by secret gist or email and refrain from releasing it to public so that everyone has equal opportunities.
     </p>
   </div>
   <pre class="container">
 - Web API
   - https://sample-accounts-api.herokuapp.com/users/1
-    - レスポンス例
+    - レスポンス例 / Sample response
       {
         attributes: {
           id: 1,
@@ -26,7 +37,7 @@
         }
       }
   - https://sample-accounts-api.herokuapp.com/users/1/accounts
-    - レスポンス例
+    - レスポンス例 / Sample response
       [
         {
           attributes: {
@@ -55,7 +66,7 @@
       ]  　
 
   - https://sample-accounts-api.herokuapp.com/accounts/2
-    - レスポンス例
+    - レスポンス例 / Sample response
       {
         attributes: {
           id: 2,
