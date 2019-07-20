@@ -35,6 +35,11 @@ class AccountsControllerTest < ActionDispatch::IntegrationTest
     assert_equal(expected, resp)
   end
 
+  test 'should return 404 when user does not exists' do
+    get '/users/999/accounts'
+    assert_response :not_found
+  end
+
   test "cors /users/1/accounts" do
     get '/users/1/accounts', headers: { Origin: "foo.example.com" }
 
@@ -57,6 +62,11 @@ class AccountsControllerTest < ActionDispatch::IntegrationTest
       }
     }
     assert_equal(expected, resp)
+  end
+
+  test 'should return 404 when account does not exists' do
+    get '/accounts/999'
+    assert_response :not_found
   end
 
   test "cors /accounts/:id" do

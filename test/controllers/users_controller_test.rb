@@ -16,6 +16,11 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     assert_equal(expected, resp)
   end
 
+  test 'should return 404 when user does not exists' do
+    get '/users/999'
+    assert_response :not_found
+  end
+
   test "cors" do
     get '/users/1', headers: { Origin: "foo.example.com" }
 
