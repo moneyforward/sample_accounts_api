@@ -12,6 +12,12 @@ jobs: # a collection of steps
           SECRET_KEY_BASE_FOR_SAMPLE_API_TEST: 60ed3b3378ce1aabe083d8b4c7d80cb5
     steps: # a collection of executable commands
       - checkout # special step to check out source code to working directory
+      - run:
+          name: Configure Bundler
+          command: |
+            echo 'export BUNDLER_VERSION=$(cat Gemfile.lock | tail -1 | tr -d " ")' >> $BASH_ENV
+            source $BASH_ENV
+            gem install bundler
       # Which version of bundler?
       - run:
           name: Which bundler?
