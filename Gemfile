@@ -12,7 +12,7 @@ gem 'rails', '~> 6.0.3'
 # Use Puma as the app server
 gem 'puma', '~> 4.3'
 
-gem 'bootsnap', '~> 1.4.6'
+gem 'bootsnap', '~> 1.4.9'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
