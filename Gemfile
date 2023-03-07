@@ -5,7 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-ruby '2.7.3'
+ruby '3.2.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 7.0.0'
@@ -13,7 +13,7 @@ gem 'sprockets-rails'
 # Use Puma as the app server
 gem 'puma', '~> 4.3'
 
-gem 'bootsnap', '~> 1.4.6'
+gem 'bootsnap'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
