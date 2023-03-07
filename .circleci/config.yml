@@ -3,7 +3,7 @@ jobs: # a collection of steps
   build: # runs not using Workflows must have a `build` job as entry point
     working_directory: ~/sample_accounts_api # directory where steps will run
     docker: # run the steps with Docker
-      - image: circleci/ruby:2.7.3
+      - image: cimg/ruby:3.2.1
         environment: # environment variables for primary container
           BUNDLE_JOBS: 3
           BUNDLE_RETRY: 3
